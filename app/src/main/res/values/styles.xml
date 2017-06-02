@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryDark">@color/dark_gray</item>
+        <item name="colorAccent">@color/no_trans_light_gray_99999</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_alpha_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_alpha_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_alpha_in</item>
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme_white" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="colorAccent">@color/color_white</item>
+
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="FullscreenActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_alpha_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_alpha_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_alpha_in</item>
+
+    </style>
+
+    <!--  dialog 弹出后背景变暗-->
+    <style name="Style_Dialog_right">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="activityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_alpha_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_alpha_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_alpha_out</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <style name="home_video_preview_img">
+        <item name="fadeDuration">300</item>
+        <item name="actualImageScaleType">centerCrop</item>
+
+    </style>
+
+    <style name="img_background">
+        <item name="fadeDuration">300</item>
+        <item name="actualImageScaleType">fitXY</item>
+    </style>
+
+
+    <style name="round_img">
+        <item name="fadeDuration">300</item>
+        <item name="actualImageScaleType">centerCrop</item>
+        <item name="placeholderImage">@color/dark_gray</item>
+        <item name="placeholderImageScaleType">centerCrop</item>
+        <item name="roundAsCircle">true</item>
+
+    </style>
+
+
+    <style name="dark_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/dark_gray</item>
+
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line</item>
+
+    </style>
+
+    <style name="style_button_follow">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginLeft">@dimen/h_margin</item>
+        <item name="android:layout_marginRight">@dimen/h_margin</item>
+        <item name="android:background">@drawable/btn_round_corner_selector</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:text">+关注</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="u_pop_select_date_anim_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_alpha_out</item>
+    </style>
+
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearence</item>
+    </style>
+
+    <style name="TabTextAppearence" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

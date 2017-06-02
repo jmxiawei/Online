@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_header_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="14sp"
+            app:font_type="title"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

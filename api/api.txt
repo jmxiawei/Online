@@ -1,0 +1,58 @@
+http://baobab.kaiyanapp.com/api/v2/notification?udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_baidu_market&las
+
+
+
+
+http://baobab.kaiyanapp.com/api/v4/tabs/follow?udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_baidu_market&last_channel=eye
+
+
+04-12 11:08:06.912 31021-31390/cn.samir.online E/stetho: AddParamsInterceptor=http://baobab.kaiyanapp.com/api/v4/discovery/category?system_version_code=25&deviceModel=Android_SDK_built_for_x86&last_channel=eyepetizer_baidu_market&udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&first_channel=eyepetizer_baidu_market&vn=3.4.1&vc=175
+04-12 11:08:06.912 31021-31021/cn.samir.online E/stetho: TabInfoResult{tabInfo=TabInfo{tabList=[Tab{name='热门', id=0, apiUrl='http://baobab.kaiyanapp.com/api/v4/discovery/hot'}, Tab{name='分类',
+ id=1, apiUrl='http://baobab.kaiyanapp.com/api/v4/discovery/category'},
+ Tab{name='作者', id=2, apiUrl='http://baobab.kaiyanapp.com/api/v4/pgcs/all'}], defaultIdx=0}}
+
+
+ //查询热门关键字
+http://baobab.kaiyanapp.com/api/v3/queries/hot?udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_baidu_market&last_channel=eye]
+
+//根据关键字查询
+ http://baobab.kaiyanapp.com/api/v1/search?query=%E5%9F%8E%E4%BC%9A%E7%8E%A9&udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_
+
+
+
+
+
+ http://baobab.kaiyanapp.com/api/v4/discovery/category?udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_baidu_market&last_channel=eye
+
+
+
+//分类跳转的规则
+
+排行榜 http://baobab.kaiyanapp.com/api/v4/rankList
+
+
+分类 /categories/detail/tab?id=36
+
+/api/v3/tag/videos?tagId=658&strategy=shareCount&udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=175&vn=3.4.3&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_baidu_market&last_channel=eyepetizer_baid
+
+
+//category 分类页面的接口
+
+
+1./api/v4/categories/detail/tab?id=36 头部数据
+2.
+
+/api/v4/pgcs/all?udid=7c7e8036375b40abb81c7f9a5f73293ccb6969b7&vc=195&vn=3.6.1&deviceModel=Android%20SDK%20built%20for%20x86&first_channel=eyepetizer_PP_market&last_channel=eyepetizer_PP_market&system_version_code=25 HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+
+
+

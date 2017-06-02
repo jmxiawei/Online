@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <include
+        layout="@layout/layout_header_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/h_margin">
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="11111111111111"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/header_bold_text_size"
+                app:font_type="moreBold"/>
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="11111111111111"
+                android:textColor="@color/text_color_gray"
+                android:textSize="12sp"
+                app:font_type="thin"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_follow"
+            style="@style/style_button_follow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <cn.samir.online.views.PinHeaderRecycler
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <cn.samir.online.views.IndicatorView
+        android:id="@+id/indicator_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="@dimen/v_margin"
+        android:layout_marginTop="@dimen/v_margin"/>
+
+
+</LinearLayout>

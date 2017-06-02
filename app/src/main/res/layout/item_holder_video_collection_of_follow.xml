@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/v_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_header"
+            style="@style/home_video_preview_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_video_collection_with_picture_arrow"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_icon_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/v_margin"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                app:font_type="moreBold"/>
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="16sp"
+                android:layout_marginTop="@dimen/v_margin"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:textSize="12sp"
+                app:font_type="thin"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/action_next"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:background="@drawable/navigation_button_background_selector"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_tab_strip_icon_category_selector" />
+
+
+    <cn.samir.online.views.CustomFontTextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_menu"
+        android:text="精选"
+        app:font_type="thin"
+        android:textSize="10sp" />
+
+    <cn.samir.online.views.CustomFontTextView
+        android:id="@+id/tv_mark"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_text"
+        android:layout_alignTop="@id/tv_text"
+        android:background="@drawable/circle" />
+
+
+</RelativeLayout>

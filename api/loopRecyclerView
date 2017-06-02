@@ -1,0 +1,425 @@
+package com.wandoujia.eyepetizer.ui.recyclerviewpager;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.os.Parcelable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView.a;
+import android.support.v7.widget.RecyclerView.f;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import com.wandoujia.base.utils.SystemUtil;
+import com.wandoujia.eyepetizer.R.styleable;
+import java.lang.reflect.Field;
+
+public class RecyclerViewPager
+  extends RecyclerView
+{
+  private boolean A = true;
+  private boolean B = false;
+  private c<?> l;
+  private float m = 0.25F;
+  private float n = 0.15F;
+  private int o = -1;
+  private int p = -1;
+  private boolean q;
+  private final int r;
+  private boolean s;
+  private int t;
+  private int u;
+  private View v;
+  private int w = Integer.MIN_VALUE;
+  private int x = Integer.MAX_VALUE;
+  private int y = Integer.MIN_VALUE;
+  private int z = Integer.MAX_VALUE;
+
+  public RecyclerViewPager(Context paramContext)
+  {
+    this(paramContext, null);
+  }
+
+  public RecyclerViewPager(Context paramContext, AttributeSet paramAttributeSet)
+  {
+    this(paramContext, paramAttributeSet, 0);
+  }
+
+  public RecyclerViewPager(Context paramContext, AttributeSet paramAttributeSet, int paramInt)
+  {
+    super(paramContext, paramAttributeSet, paramInt);
+    paramContext = paramContext.obtainStyledAttributes(paramAttributeSet, R.styleable.RecyclerViewPager, paramInt, 0);
+    this.n = paramContext.getFloat(1, 0.15F);
+    this.m = paramContext.getFloat(0, 0.25F);
+    this.q = paramContext.getBoolean(2, this.q);
+    paramContext.recycle();
+    setNestedScrollingEnabled(false);
+    this.r = SystemUtil.getScreenWidth(getContext());
+  }
+
+  protected c a(RecyclerView.a parama)
+  {
+    if ((parama instanceof c)) {
+      return (c)parama;
+    }
+    return new c(parama);
+  }
+
+  public void a(int paramInt)
+  {
+    this.p = getCurrentPosition();
+    this.o = paramInt;
+    super.a(paramInt);
+  }
+
+  public final void a(boolean paramBoolean, int paramInt)
+  {
+    Object localObject = (LinearLayoutManager)getLayoutManager();
+    int j = ((LinearLayoutManager)localObject).n();
+    if (paramBoolean) {}
+    View localView;
+    for (int i = ((LinearLayoutManager)localObject).l();; i = ((LinearLayoutManager)localObject).m())
+    {
+      localView = ((LinearLayoutManager)localObject).a(i);
+      localObject = ((LinearLayoutManager)localObject).a(j);
+      if ((localObject != null) && (localView != null)) {
+        break;
+      }
+      return;
+    }
+    i = (this.r - ((View)localObject).getWidth()) / 2;
+    j = (this.r - localView.getWidth()) / 2;
+    int k = localView.getWidth();
+    int i1 = ((View)localObject).getLeft();
+    int i2 = localView.getRight();
+    if ((paramBoolean) && (paramInt > 0))
+    {
+      a(i1 - i, 0);
+      return;
+    }
+    a(-(j + k - i2), 0);
+  }
+
+  public final boolean b(int paramInt1, int paramInt2)
+  {
+    a(true, paramInt1);
+    return true;
+  }
+
+  public final void c(int paramInt)
+  {
+    super.c(paramInt);
+    int i;
+    Object localObject;
+    if (paramInt == 1)
+    {
+      this.s = true;
+      if (getLayoutManager().f())
+      {
+        i = getChildCount();
+        if (i > 0)
+        {
+          paramInt = 0;
+          if (paramInt < i)
+          {
+            localObject = getChildAt(paramInt);
+            if (android.support.v4.app.c.a(this, (View)localObject))
+            {
+              label57:
+              this.v = ((View)localObject);
+              if (this.v == null) {
+                break label178;
+              }
+              if (this.A)
+              {
+                this.p = e(this.v);
+                this.A = false;
+              }
+              this.t = this.v.getLeft();
+              this.u = this.v.getTop();
+            }
+          }
+        }
+      }
+    }
+    label172:
+    label178:
+    label225:
+    do
+    {
+      return;
+      paramInt += 1;
+      break;
+      localObject = null;
+      break label57;
+      i = getChildCount();
+      if (i > 0)
+      {
+        paramInt = 0;
+        for (;;)
+        {
+          if (paramInt >= i) {
+            break label172;
+          }
+          View localView = getChildAt(paramInt);
+          localObject = localView;
+          if (android.support.v4.app.c.b(this, localView)) {
+            break;
+          }
+          paramInt += 1;
+        }
+      }
+      localObject = null;
+      break label57;
+      this.p = -1;
+      return;
+      if (paramInt == 2)
+      {
+        this.s = false;
+        if (this.v != null)
+        {
+          if (!getLayoutManager().f()) {
+            break label225;
+          }
+          this.v.getLeft();
+        }
+        for (;;)
+        {
+          this.v = null;
+          return;
+          this.v.getTop();
+        }
+      }
+    } while (paramInt != 0);
+    int j;
+    if (this.s) {
+      if (getLayoutManager().f())
+      {
+        paramInt = android.support.v4.app.c.a(this);
+        if (this.v != null)
+        {
+          i = d(this.v);
+          if (!getLayoutManager().f()) {
+            break label460;
+          }
+          j = this.v.getLeft() - this.t;
+          if ((j <= this.v.getWidth() * this.m) || (this.v.getLeft() < this.w)) {
+            break label401;
+          }
+          if (!this.B) {
+            break label453;
+          }
+          paramInt = i + 1;
+        }
+        label344:
+        j = this.l.a();
+        if (paramInt >= 0) {
+          break label579;
+        }
+        i = 0;
+        label358:
+        b(i);
+        this.v = null;
+      }
+    }
+    for (;;)
+    {
+      this.w = Integer.MIN_VALUE;
+      this.x = Integer.MAX_VALUE;
+      this.y = Integer.MIN_VALUE;
+      this.z = Integer.MAX_VALUE;
+      return;
+      paramInt = android.support.v4.app.c.b(this);
+      break;
+      label401:
+      paramInt = i;
+      if (j >= this.v.getWidth() * -this.m) {
+        break label344;
+      }
+      paramInt = i;
+      if (this.v.getLeft() > this.x) {
+        break label344;
+      }
+      if (!this.B)
+      {
+        paramInt = i + 1;
+        break label344;
+      }
+      label453:
+      paramInt = i - 1;
+      break label344;
+      label460:
+      j = this.v.getTop() - this.u;
+      if ((j > this.v.getHeight() * this.m) && (this.v.getTop() >= this.y))
+      {
+        if (!this.B) {
+          break label572;
+        }
+        paramInt = i + 1;
+        break label344;
+      }
+      paramInt = i;
+      if (j >= this.v.getHeight() * -this.m) {
+        break label344;
+      }
+      paramInt = i;
+      if (this.v.getTop() > this.z) {
+        break label344;
+      }
+      if (!this.B)
+      {
+        paramInt = i + 1;
+        break label344;
+      }
+      label572:
+      paramInt = i - 1;
+      break label344;
+      label579:
+      i = paramInt;
+      if (paramInt < j) {
+        break label358;
+      }
+      i = j - 1;
+      break label358;
+      if (this.o != this.p)
+      {
+        this.A = true;
+        this.p = this.o;
+      }
+    }
+  }
+
+  public boolean canScrollHorizontally(int paramInt)
+  {
+    return true;
+  }
+
+  public boolean dispatchTouchEvent(MotionEvent paramMotionEvent)
+  {
+    if ((paramMotionEvent.getAction() == 0) && (getLayoutManager() != null))
+    {
+      if (!getLayoutManager().f()) {
+        break label35;
+      }
+      android.support.v4.app.c.a(this);
+    }
+    for (;;)
+    {
+      return super.dispatchTouchEvent(paramMotionEvent);
+      label35:
+      android.support.v4.app.c.b(this);
+    }
+  }
+
+  public RecyclerView.a getAdapter()
+  {
+    if (this.l != null) {
+      return this.l.a;
+    }
+    return null;
+  }
+
+  public int getCurrentPosition()
+  {
+    if (getLayoutManager().f()) {}
+    for (int i = android.support.v4.app.c.a(this);; i = android.support.v4.app.c.b(this))
+    {
+      int j = i;
+      if (i < 0) {
+        j = this.o;
+      }
+      return j;
+    }
+  }
+
+  public float getFlingFactor()
+  {
+    return this.n;
+  }
+
+  public float getTriggerOffset()
+  {
+    return this.m;
+  }
+
+  public c getWrapperAdapter()
+  {
+    return this.l;
+  }
+
+  protected void onRestoreInstanceState(Parcelable paramParcelable)
+  {
+    for (;;)
+    {
+      try
+      {
+        localObject = paramParcelable.getClass().getDeclaredField("mLayoutState");
+        ((Field)localObject).setAccessible(true);
+        localObject = ((Field)localObject).get(paramParcelable);
+        localField1 = localObject.getClass().getDeclaredField("mAnchorOffset");
+        localField2 = localObject.getClass().getDeclaredField("mAnchorPosition");
+        localField2.setAccessible(true);
+        localField1.setAccessible(true);
+        if (localField1.getInt(localObject) <= 0) {
+          continue;
+        }
+        localField2.set(localObject, Integer.valueOf(localField2.getInt(localObject) - 1));
+        localField1.setInt(localObject, 0);
+      }
+      catch (Throwable localThrowable)
+      {
+        Object localObject;
+        Field localField1;
+        Field localField2;
+        localThrowable.printStackTrace();
+        continue;
+      }
+      super.onRestoreInstanceState(paramParcelable);
+      return;
+      if (localField1.getInt(localObject) < 0) {
+        localField2.set(localObject, Integer.valueOf(localField2.getInt(localObject) + 1));
+      }
+    }
+  }
+
+  public boolean onTouchEvent(MotionEvent paramMotionEvent)
+  {
+    if ((paramMotionEvent.getAction() == 2) && (this.v != null))
+    {
+      this.w = Math.max(this.v.getLeft(), this.w);
+      this.y = Math.max(this.v.getTop(), this.y);
+      this.x = Math.min(this.v.getLeft(), this.x);
+      this.z = Math.min(this.v.getTop(), this.z);
+    }
+    return super.onTouchEvent(paramMotionEvent);
+  }
+
+  public void setAdapter(RecyclerView.a parama)
+  {
+    this.l = a(parama);
+    super.setAdapter(this.l);
+  }
+
+  public void setFlingFactor(float paramFloat)
+  {
+    this.n = paramFloat;
+  }
+
+  public void setLayoutManager(RecyclerView.f paramf)
+  {
+    super.setLayoutManager(paramf);
+    if ((paramf instanceof LinearLayoutManager)) {
+      this.B = ((LinearLayoutManager)paramf).h();
+    }
+  }
+
+  public void setSinglePageFling(boolean paramBoolean)
+  {
+    this.q = paramBoolean;
+  }
+
+  public void setTriggerOffset(float paramFloat)
+  {
+    this.m = paramFloat;
+  }
+}

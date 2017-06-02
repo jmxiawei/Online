@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical"
+              tools:context="cn.samir.online.ui.MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <cn.samir.online.views.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <cn.samir.online.views.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/light_gray"
+        />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:background="@ref/0x0106000b"-->
+    <!--android:layout_width="-1"-->
+    <!--android:layout_height="-1">-->
+
+    <!--<com.wandoujia.eyepetizer.ui.view.slidingtab.CustomViewPager-->
+        <!--android:id="@ref/0x7f0e007a"-->
+        <!--android:layout_width="-1"-->
+        <!--android:layout_height="-1" />-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="1"-->
+        <!--android:id="@ref/0x7f0e007b"-->
+        <!--android:layout_width="-1"-->
+        <!--android:layout_height="-2">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="1"-->
+            <!--android:background="@ref/0x0106000b"-->
+            <!--android:layout_width="-1"-->
+            <!--android:layout_height="-2">-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.EyepetizerSimpleDraweeView-->
+                <!--android:layout_gravity="0x1"-->
+                <!--android:id="@ref/0x7f0e0090"-->
+                <!--android:background="@ref/0x7f0200d0"-->
+                <!--android:padding="@ref/0x7f0800ae"-->
+                <!--android:layout_width="@ref/0x7f0800af"-->
+                <!--android:layout_height="@ref/0x7f0800af"-->
+                <!--android:layout_marginTop="@ref/0x7f080099"-->
+                <!--app:placeholderImage="@ref/0x7f0200cf"-->
+                <!--app:failureImage="@ref/0x7f0200cf"-->
+                <!--app:failureImageScaleType="0"-->
+                <!--app:roundAsCircle="true" />-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.font.CustomFontTextView-->
+                <!--android:textSize="@ref/0x7f0800cf"-->
+                <!--android:textColor="@ref/0x7f0d0029"-->
+                <!--android:layout_gravity="0x1"-->
+                <!--android:id="@ref/0x7f0e0091"-->
+                <!--android:layout_width="-2"-->
+                <!--android:layout_height="-2"-->
+                <!--android:layout_marginTop="@ref/0x7f080097"-->
+                <!--app:fontName="1" />-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.font.CustomFontTextView-->
+                <!--android:textSize="@ref/0x7f0800d0"-->
+                <!--android:textColor="@ref/0x7f0d002a"-->
+                <!--android:layout_gravity="0x1"-->
+                <!--android:id="@ref/0x7f0e0092"-->
+                <!--android:layout_width="-2"-->
+                <!--android:layout_height="-2"-->
+                <!--android:layout_marginTop="@ref/0x7f080095"-->
+                <!--android:lineSpacingMultiplier="1067869824.000000" />-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.FollowButton-->
+                <!--android:layout_gravity="0x1"-->
+                <!--android:id="@ref/0x7f0e007e"-->
+                <!--android:layout_marginTop="@ref/0x7f080094"-->
+                <!--style="@style/button_follow_large" />-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.font.CustomFontTextView-->
+                <!--android:textSize="@ref/0x7f0800d0"-->
+                <!--android:textColor="@ref/0x7f0d002a"-->
+                <!--android:ellipsize="3"-->
+                <!--android:gravity="0x11"-->
+                <!--android:layout_gravity="0x1"-->
+                <!--android:id="@ref/0x7f0e0093"-->
+                <!--android:layout_width="@ref/0x7f0800b0"-->
+                <!--android:layout_height="-2"-->
+                <!--android:layout_marginTop="@ref/0x7f080096"-->
+                <!--android:maxLines="2"-->
+                <!--android:lineSpacingMultiplier="1067869824.000000" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="-1"-->
+                <!--android:layout_height="-2"-->
+                <!--android:minHeight="@ref/0x7f080096">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@ref/0x7f0e0094"-->
+                    <!--android:layout_width="-2"-->
+                    <!--android:layout_height="-2"-->
+                    <!--android:src="@ref/0x7f020070"-->
+                    <!--android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:background="@ref/0x0106000b"-->
+            <!--android:layout_width="-1"-->
+            <!--android:layout_height="@ref/0x7f0800b2">-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.slidingtab.SlidingTabLayout-->
+                <!--android:id="@ref/0x7f0e007f"-->
+                <!--android:visibility="1"-->
+                <!--android:layout_width="-1"-->
+                <!--android:layout_height="-1">-->
+
+            <!--</com.wandoujia.eyepetizer.ui.view.slidingtab.SlidingTabLayout>-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_gravity="0x30"-->
+        <!--android:layout_width="-1"-->
+        <!--android:layout_height="@ref/0x7f080048">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@ref/0x7f0e0095"-->
+            <!--android:background="@ref/0x0106000b"-->
+            <!--android:layout_width="-1"-->
+            <!--android:layout_height="-1">-->
+
+            <!--<com.wandoujia.eyepetizer.ui.view.font.CustomFontTextView-->
+                <!--android:textSize="@ref/0x7f0800cf"-->
+                <!--android:textColor="@ref/0x7f0d0029"-->
+                <!--android:id="@ref/0x7f0e0096"-->
+                <!--android:layout_width="-2"-->
+                <!--android:layout_height="-2"-->
+                <!--android:layout_marginLeft="@ref/0x7f080048"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--app:fontName="1" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@ref/0x7f0e007d"-->
+            <!--android:layout_width="-2"-->
+            <!--android:layout_height="-2"-->
+            <!--android:src="@ref/0x7f02006a"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@ref/0x7f0e0097"-->
+            <!--android:layout_width="-2"-->
+            <!--android:layout_height="-2"-->
+            <!--android:src="@ref/0x7f020091"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true" />-->
+    <!--</RelativeLayout>-->
+
+<!--</FrameLayout>-->

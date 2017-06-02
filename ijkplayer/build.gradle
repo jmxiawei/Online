@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+    compile rootProject.ext.supportpreference
+    compile rootProject.ext.supportannotations
+    compile rootProject.ext.supportAppcompat
+
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.7.9'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.7.9'
+    //compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.7.8.1'
+    //compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.7.8.1'
+    //compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.7.8.1'
+    //compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.7.8.1'
+    //compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.7.8.1'
+
+}

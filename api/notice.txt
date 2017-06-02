@@ -1,0 +1,5 @@
+1. mapping 文件需要打开代码混淆才会生成
+2. 一个apk经过需要多次修复，则将每次修复的patch文件全部修复一遍即可，服务器需要判断哪个版本经过了几次修复，然后将所有文件全部下发
+
+3.使用 PagerSnapHelper 将RecyclerView 作为viewPager使用，并要无限滑动，如果在bindViewHolder是直接会导致第一次的时候不会出现左边可以滑动
+    在layoutManager的onLayoutCompleted 方法里。再执行attachToRecyclerView

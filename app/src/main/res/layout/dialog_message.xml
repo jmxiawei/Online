@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical"
+              android:padding="@dimen/h_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="32dp"
+            android:text="标题"
+            android:textColor="@color/text_color_black"
+            android:textSize="14sp"
+            app:font_type="moreBold"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/black"/>
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:minHeight="100dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:font_type="thin"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="80dp"
+                android:layout_height="36dp"
+                android:background="@drawable/dialog_btn_selector"
+                android:gravity="center"
+                android:text="@string/str_cancel"
+                android:textColor="@color/text_color_gray"
+                app:font_type="thin"/>
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/btn_ensure"
+                android:layout_width="80dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/h_margin"
+                android:background="@drawable/dialog_btn_selector"
+                android:gravity="center"
+                android:text="@string/str_ok"
+                android:textColor="@color/text_color_black"
+                app:font_type="thin"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

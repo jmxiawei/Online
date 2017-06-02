@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="IndicatorViewPager">
+
+        <attr name="indicator_margin_bottom" format="dimension" />
+
+    </declare-styleable>
+
+    <item name="notify_layout_id" type="id"/>
+</resources>

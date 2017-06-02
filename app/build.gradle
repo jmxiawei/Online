@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+//制作补丁时将这个打开，auto-patch-plugin紧跟着com.android.application
+apply plugin: 'auto-patch-plugin'
+apply plugin: 'robust'
+android {
+    signingConfigs {
+        release {
+            keyAlias 'online.jks'
+            keyPassword 'online.jks'
+            storeFile file('online.jks')
+            storePassword 'online.jks'
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "cn.samir.online"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            shrinkResources false
+            zipAlignEnabled true
+            manifestPlaceholders = [sugar_orm_version: "${rootProject.ext.versionCode}"]
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            manifestPlaceholders = [sugar_orm_version: "${rootProject.ext.versionCode}"]
+            zipAlignEnabled true
+            //minifyEnabled true
+            signingConfig signingConfigs.release
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    lintOptions {
+        disable "ResourceType"
+    }
+
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'arm64-v8a', 'armeabi-v7a'
+//            universalApk true //是否打包一个包含所有平台的apk
+//        }
+//    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.robust
+//compile "com.android.support:appcompat-v7:25.0.1"
+//compile rootProject.ext.supportAppcompat
+//compile rootProject.ext.supportcardview
+    compile rootProject.ext.supportDesign
+    compile rootProject.ext.supportrecyclerview
+    compile rootProject.ext.okhttp
+    compile rootProject.ext.butterknife
+    compile rootProject.ext.fresco
+    compile rootProject.ext.sugar
+//compile rootProject.ext.leakcanaryNoOp
+    compile rootProject.ext.retrofit
+    compile project(':ijkplayer')
+    compile project(':customlib')
+    compile project(':domains')
+//compile rootProject.ext.bolts
+//compile rootProject.ext.supportV4
+    compile rootProject.ext.animatedGif
+    compile rootProject.ext.converterGson
+//debugCompile  rootProject.ext.stethoOkhttp3
+//debugCompile  rootProject.ext.stetho
+    compile rootProject.ext.stetho
+    compile rootProject.ext.easypermissions
+    testCompile junitVersion
+    annotationProcessor butterknifeAnnotationProcessor
+    compile project(':convenientbanner')
+
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_banner"
+            style="@style/home_video_preview_img"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/h_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/h_margin"
+            android:orientation="vertical">
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:maxLines="2"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                app:font_type="moreBold"/>
+
+            <cn.samir.online.views.CustomFontTextView
+                android:id="@+id/tv_cate_duration"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="@dimen/v_margin"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/color_white"
+                android:textSize="12sp"
+                app:font_type="thin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/h_margin"
+        android:background="@color/line_white"/>
+
+
+</LinearLayout>

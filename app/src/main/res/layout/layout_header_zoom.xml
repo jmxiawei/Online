@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/zoom_container"
+             android:layout_width="match_parent"
+             android:layout_height="220dp"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/zoom_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_header"
+            style="@style/home_video_preview_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_icon"
+            style="@style/home_video_preview_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"/>
+
+
+        <cn.samir.online.views.LoadingAnimView
+            android:id="@+id/tv_notify"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/v_margin"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            app:font_type="title"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_theme">#2e2ef1</color>
+    <color name="dark_gray">#7e7e7e</color>
+    <color name="light_gray">#11bfbdbd</color>
+    <color name="no_trans_light_gray">#e4e4e4</color>
+    <color name="no_trans_light_gray_99999">#999999</color>
+    <color name="trans_light_gray">#44bfbdbd</color>
+    <color name="color_white">@android:color/white</color>
+    <color name="color_white_half">#99FFFFFF</color>
+    <color name="color_white_33">#33FFFFFF</color>
+    <color name="bg_light_gray">#99ededed</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparent_aa">#aa000000</color>
+    <color name="transparent_66">#66000000</color>
+
+    <color name="transparent_mask">#44000000</color>
+
+    <color name="transparent_33">#33000000</color>
+    <color name="light_gray_divider">#eaeaea</color>
+    <color name="text_color_black">#BB000000</color>
+    <color name="text_color_gray">#66000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#ff000000</color>
+    <color name="line">#22000000</color>
+    <color name="line_white">#22FFFFFF</color>
+    <color name="shade_white">#22ffffff</color>
+
+    <color name="background_gray">#d4d4d4</color>
+
+
+    <color name="dim_foreground_dark">#bebebe</color>
+    <color name="dim_foreground_dark_disabled">#80bebebe</color>
+    <color name="dim_foreground_dark_inverse">#323232</color>
+    <color name="dim_foreground_dark_inverse_disabled">#80323232</color>
+
+</resources>

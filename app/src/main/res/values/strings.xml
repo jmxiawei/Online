@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">开眼</string>
+    <string name="app_name_en">eyepetizer</string>
+    <string name="title_activity_bottom_navigation_main">开眼</string>
+    <string name="title_category">发现</string>
+    <string name="title_feed">精选</string>
+    <string name="title_follow">关注</string>
+    <string name="title_profile">我的</string>
+
+
+    <string-array name="splash_text_cn">
+        <item>每日编辑精选，一如既往</item>
+        <item>关注越多，发现越多</item>
+        <item>离线自动缓存，精彩永不下线</item>
+        <item>登录即可订阅、评论和同步已收藏视频</item>
+    </string-array>
+
+
+    <string-array name="splash_text_en">
+        <item>daily appetizers for your eyes,as always</item>
+        <item>subscribe more,discover a whole lot more</item>
+        <item>enjoy your daily eyepetit,even without connecting</item>
+        <item>sign in to comment and collect videos,to subscript also</item>
+    </string-array>
+
+    <string name="title_activity_test_fullscreen">TestFullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="str_eyepetizer">Eyepetizer</string>
+    <string name="str_for">For</string>
+    <string name="str_today">Today</string>
+
+
+    <string name="str_discover">Discover</string>
+    <string name="str_subscription">Subscription</string>
+    <string name="str_all_cate">全部分类</string>
+    <string name="str_all_author">全部作者</string>
+    <string name="str_feed_issue">每日编辑精选</string>
+
+    <string name="str_hot_ranklist">热门排行榜</string>
+    <string name="str_hot_album">精选热门专辑</string>
+
+    <string name="str_order_by_time">按时间排序</string>
+    <string name="str_order_by_share">按分享排序</string>
+
+
+    <string name="str_splash_bottom_cn">每日精选推荐，让你大开眼界</string>
+    <string name="str_splash_bottom_en">Daily eyepetizers for you eye,Bon eyepetit </string>
+
+    <string name="error_unknow">未知异常</string>
+    <string name="error_net">网络异常</string>
+
+
+    <string name="text_profiles_msg">我的消息</string>
+    <string name="text_profiles_follow">我的关注</string>
+    <string name="text_profiles_cache">我的缓存</string>
+    <string name="text_profiles_reply">意见反馈</string>
+    <string name="text_profiles_contribute">我要投稿</string>
+    <string name="text_downloaded">已下载</string>
+
+    <string name="text_download">下载</string>
+    <string name="text_search_hint">帮你找到感兴趣的视频</string>
+    <string name="text_search_notify">输入标题或描述中的关键词找到更多视频</string>
+
+
+    <string name="text_download_net_notify">当前网络为运营商，继续下载会消耗运营商流量，继续下载吗？</string>
+
+    <string name="str_ok">确定</string>
+    <string name="str_cancel">取消</string>
+    <string name="text_show_search_result">- [%1$s] 搜索结果共 %2$d 个 -</string>
+
+    <string name="schema_pgcs_all">eyepetizer://pgcs/all</string>
+    <string name="schema_categories_all">eyepetizer://categories/all</string>
+
+    <string name="account_type">cn.samir.online.eyepetizer</string>
+    <string name="account_provider_authentic">cn.samir.online.eyepetizer</string>
+
+
+</resources>

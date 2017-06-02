@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_arrow_color1">#ffffffff</color>
+    <color name="default_arrow_color2">#66ffffff</color>
+    <color name="default_arrow_color3">#22ffffff</color>
+</resources>

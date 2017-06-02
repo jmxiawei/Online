@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:keepScreenOn="true"
+    tools:context="cn.samir.online.ui.splash.SplashPictureActivity">
+
+    <cn.samir.online.views.AutoScaleZoomDreewView
+        android:id="@+id/aszd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="300"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.samir.online.views.LogoInnerOuterAnimView
+            android:id="@+id/logoAnim"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="250dp"/>
+
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_eyepetizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_eyepetizer"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/splash_text_size"
+            android:visibility="invisible"
+            fresco:font_type="title"
+            />
+
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/splash_text_margin_top"
+            android:text="@string/str_for"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/splash_text_size"
+            android:visibility="invisible"
+            fresco:font_type="title"
+            />
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/splash_text_margin_top"
+            android:text="@string/str_today"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/splash_text_size"
+            android:visibility="invisible"
+            fresco:font_type="title"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <cn.samir.online.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_splash_bottom_en"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            fresco:font_type="title"/>
+
+        <cn.samir.online.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:gravity="center"
+            android:text="@string/str_splash_bottom_cn"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

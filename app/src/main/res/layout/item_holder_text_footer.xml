@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:orientation="horizontal">
+
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="查看往期精选"
+            android:textColor="@color/text_color_black"
+            android:textSize="14sp"
+            app:font_type="thin"/>
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/h_margin"
+            android:src="@mipmap/ic_action_more_arrow_dark"/>
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/layout_footer_divider"/>
+
+</LinearLayout>

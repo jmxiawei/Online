@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_item_height">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_bg"
+        style="@style/home_video_preview_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/view_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_mask">
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="因为这些时候，姑娘需要健身"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            app:font_type="moreBold"/>
+
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_cate_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="#广告    /     0'27"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            app:font_type="thin"/>
+
+
+        <cn.samir.online.views.CustomFontTextView
+            android:id="@+id/tv_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cate_duration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/v_margin"
+            android:background="@color/trans_light_gray"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="触电网 True Move Trailer "
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            app:font_type="thin"/>
+    </RelativeLayout>
+
+</RelativeLayout>

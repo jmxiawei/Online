@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical"
+              android:padding="2dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_feed"
+        style="@style/home_video_preview_img"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/video_collection_item_height"/>
+
+
+    <cn.samir.online.views.CustomFontTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"
+        app:font_type="moreBold"
+        />
+
+    <cn.samir.online.views.CustomFontTextView
+        android:id="@+id/tv_cate_duration"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_gray"
+        android:textSize="12sp"
+        app:font_type="thin"
+        />
+
+</LinearLayout>

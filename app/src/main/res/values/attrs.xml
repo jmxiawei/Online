@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomNavigationView">
+
+        <attr name="navigation" format="reference"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomFontTextView">
+
+        <attr name="font_type">
+            <enum name="thin" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="moreBold" value="2"/>
+            <enum name="title" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

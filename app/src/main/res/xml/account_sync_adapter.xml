@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="cn.samir.online.eyepetizer"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:contentAuthority="cn.samir.online.eyepetizer"
+    android:smallIcon="@mipmap/ic_launcher"
+    android:isAlwaysSyncable="false"/>

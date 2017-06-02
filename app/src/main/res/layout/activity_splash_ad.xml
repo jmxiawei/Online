@@ -1,0 +1,54 @@
+<cn.elvin.customlib.PullUpFinishLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="#0099cc"
+                                       android:id="@+id/fl_pull_finish"
+                                       tools:context="cn.samir.online.ui.splash.SplashVideoActivity">
+
+
+    <cn.samir.ijkplayer.widget.media.IjkVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:src="@mipmap/ic_account_login_header"/>
+        </LinearLayout>
+
+        <cn.elvin.customlib.IndicatorViewPager
+            android:id="@+id/indicatorViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:indicator_margin_bottom="@dimen/splash_indication_bottom"/>
+
+
+        <cn.elvin.customlib.ArrowAnimView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+</cn.elvin.customlib.PullUpFinishLayout>
