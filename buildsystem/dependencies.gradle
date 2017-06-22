@@ -19,7 +19,6 @@ ext {
     targetSdkVersion = 25
     support = "25.3.0"
 
-
 //    versionCode = 195
 //    versionName = '3.6.1'
 
@@ -69,10 +68,9 @@ ext {
 
     // hotfix
     aceso = "com.mogujie.aceso:aceso-android-lib:0.0.1"
-    robust =  "com.meituan.robust:robust:0.3.8"
+    robust = "com.meituan.robust:robust:0.3.8"
 
-
-
+    kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 
 }

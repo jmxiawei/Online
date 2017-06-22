@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 //制作补丁时将这个打开，auto-patch-plugin紧跟着com.android.application
 apply plugin: 'auto-patch-plugin'
 apply plugin: 'robust'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
 android {
     signingConfigs {
         release {
@@ -69,6 +73,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+
+    compile rootProject.ext.kotlin
     compile rootProject.ext.robust
 //compile "com.android.support:appcompat-v7:25.0.1"
 //compile rootProject.ext.supportAppcompat

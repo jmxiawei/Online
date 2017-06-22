@@ -1,6 +1,5 @@
 package cn.samir.online.mvp.intefaces;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -10,12 +9,19 @@ import cn.samir.online.adapter.TabPagerAdapter;
 import cn.samir.online.mvp.PresenterView;
 
 /**
+ *
+ * Tablayout 和 ViewPager 组合的页面
+ *
  * Created by xiaw on 2017/5/11 0011.
  */
 
 public interface ITabViewPagerView extends PresenterView {
 
+    /**
+     * 已知tab的内容。key 用户获取tab列表
+     */
     String PARAM_TABS = "PARAM_TABS";
+
     String PARAM_TAB_TYPE = "PARAM_TAB_TYPE";
     String PARAM_TAB_URL = "PARAM_TAB_URL";
     String PARAM_DEFAULT_INDEX = "PARAM_DEFAULT_INDEX";

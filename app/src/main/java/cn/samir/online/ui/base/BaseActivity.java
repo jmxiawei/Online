@@ -50,6 +50,9 @@ public class BaseActivity extends AppCompatActivity implements EasyPermissions.P
 
     private BaseHttpHandler mBaseHttpHandler;
 
+    /**
+     * 统一处理所有的点击事件
+     */
     private BroadcastReceiver EventReceive = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -57,14 +60,17 @@ public class BaseActivity extends AppCompatActivity implements EasyPermissions.P
             if (Constant.ACTION_EVENT.equals(intent.getAction())) {
                 Parcelable data = intent.getParcelableExtra(Constant.ACTION_EVENT_DATA);
                 if (data instanceof Video || data instanceof VideoEvent) {
+                    //看视频
                     if (data instanceof Video) {
                         Intent intent1 = VideoDetailActivity.newIntent(mBaseContext, (Video) data);
                         startActivity(intent1);
                     } else {
+                        //列表，显示有下一个
                         Intent intent1 = VideoDetailActivity.newIntent(mBaseContext, (VideoEvent) data);
                         startActivity(intent1);
                     }
                 } else if (data instanceof ParcelableString) {
+                    //跳转页面，定义看manifest
                     Intent intent1 = startIntentByActionUrl(((ParcelableString) data).getData());
                     if (intent1 == null) {
                         Intent actionIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(((ParcelableString) data).getData()));
@@ -73,9 +79,11 @@ public class BaseActivity extends AppCompatActivity implements EasyPermissions.P
                         startActivity(intent1);
                     }
                 } else if (data instanceof IssueNavigationCard) {
+                    //选择日期
                     Intent issueIntent = FeedIssueActivity.toThis(mBaseContext, (IssueNavigationCard) data);
                     startActivity(issueIntent);
                 } else if (data instanceof HomeProfileEvent) {
+                    //首页
                     startActivityHomeProfilePage((HomeProfileEvent) data);
                 }
             }
